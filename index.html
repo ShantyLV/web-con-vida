@@ -1,12 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web-con-vida</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VLAUTOS — Carros que encienden tu ruta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>web-con-vida</h1> 
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <nav class="nav">
+    <a href="#top" class="nav__logo">VL<span class="nav__logo-accent">AUTOS</span></a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
+    <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav__links">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#nosotros">Por qué nosotros</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li class="nav__links-cta">
+        <a class="btn btn--whatsapp btn--nav" href="https://wa.me/573004424392?text=Hola%20VLAUTOS%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20carros" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9.2 9.5 8 9.3 7.5c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Escríbenos
+        </a>
+      </li>
+    </ul>
+
+    <a class="btn btn--whatsapp btn--nav nav__cta-desktop" href="https://wa.me/573004424392?text=Hola%20VLAUTOS%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20carros" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9.2 9.5 8 9.3 7.5c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Escríbenos
+    </a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__beam hero__beam--1"></div>
+      <div class="hero__beam hero__beam--2"></div>
+      <div class="hero__grain"></div>
+    </div>
+    <div class="hero__content">
+      <p class="eyebrow">CONCESIONARIO · BOGOTÁ D.C.</p>
+      <h1 class="hero__title">
+        <span class="hero__line" style="--d:0">TU PRÓXIMO CARRO</span>
+        <span class="hero__line" style="--d:1">ESTÁ A UN</span>
+        <span class="hero__line hero__line--accent" style="--d:2">MENSAJE DE&nbsp;DISTANCIA</span>
+      </h1>
+      <p class="hero__subtitle">Sin filas, sin vendedores de afán, sin letra pequeña. Nos escribes por WhatsApp, te contamos todo del carro que te interesa y avanzamos a tu ritmo.</p>
+      <div class="hero__actions">
+        <a class="btn btn--whatsapp btn--lg" href="https://wa.me/573004424392?text=Hola%20VLAUTOS%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20carros" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9.2 9.5 8 9.3 7.5c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Hablar por WhatsApp
+        </a>
+        <a class="btn btn--ghost" href="#catalogo">Ver catálogo ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider--down" aria-hidden="true"></div>
+
+  <!-- ===== STATS / DASHBOARD ===== -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat">
+        <div class="digit-row">
+          <span class="digit-box">1</span><span class="digit-box">8</span><span class="digit-box">0</span><span class="digit-box digit-box--plus">+</span>
+        </div>
+        <p class="stat__label">Carros entregados</p>
+      </div>
+      <div class="stat">
+        <div class="digit-row">
+          <span class="digit-box">1</span><span class="digit-box">2</span>
+        </div>
+        <p class="stat__label">Años en el mercado</p>
+      </div>
+      <div class="stat">
+        <div class="digit-row">
+          <span class="digit-box">4</span><span class="digit-box digit-box--dot">.</span><span class="digit-box">9</span>
+        </div>
+        <p class="stat__label">Satisfacción / 5</p>
+      </div>
+      <div class="stat">
+        <div class="digit-row">
+          <span class="digit-box">2</span><span class="digit-box">4</span><span class="digit-box digit-box--plus">h</span>
+        </div>
+        <p class="stat__label">Tiempo de respuesta</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider--up" aria-hidden="true"></div>
+
+  <!-- ===== CATÁLOGO ===== -->
+  <section class="catalog" id="catalogo">
+    <div class="section-head">
+      <p class="eyebrow">CATÁLOGO ACTUAL</p>
+      <h2 class="section-title">Carros disponibles esta semana</h2>
+      <p class="section-desc">Inventario rotativo, revisado mecánicamente antes de publicarse. Si el que buscas no está aquí, pregúntanos — casi siempre tenemos algo llegando.</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="car-card">
+        <div class="car-card__top">
+          <svg viewBox="0 0 120 60" class="car-icon" aria-hidden="true"><path d="M10 40 L18 24 Q22 18 32 18 L78 18 Q88 18 92 24 L100 40 L108 40 Q112 40 112 44 L112 48 Q112 52 108 52 L100 52 M20 52 L92 52 M8 44 L8 48 Q8 52 12 52 L20 52 M20 40 L100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="88" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+          <span class="tag tag--new">Ingresó esta semana</span>
+        </div>
+        <h3 class="car-card__name">Mazda 3 Grand Touring</h3>
+        <p class="car-card__meta">2021 · 42.000 km · Automático</p>
+        <p class="car-card__price">$78.500.000</p>
+        <ul class="car-card__specs">
+          <li>Sedán · Gasolina</li>
+          <li>Único dueño</li>
+          <li>Techo panorámico</li>
+        </ul>
+        <a class="btn btn--card" href="https://wa.me/573004424392?text=Hola%2C%20me%20interesa%20el%20Mazda%203%20Grand%20Touring%202021" target="_blank" rel="noopener">Preguntar por este</a>
+      </article>
+
+      <article class="car-card">
+        <div class="car-card__top">
+          <svg viewBox="0 0 120 60" class="car-icon" aria-hidden="true"><path d="M10 40 L18 24 Q22 18 32 18 L78 18 Q88 18 92 24 L100 40 L108 40 Q112 40 112 44 L112 48 Q112 52 108 52 L100 52 M20 52 L92 52 M8 44 L8 48 Q8 52 12 52 L20 52 M20 40 L100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="88" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <h3 class="car-card__name">Renault Duster Intens</h3>
+        <p class="car-card__meta">2020 · 58.000 km · Mecánico</p>
+        <p class="car-card__price">$62.900.000</p>
+        <ul class="car-card__specs">
+          <li>Camioneta · Gasolina</li>
+          <li>4x2</li>
+          <li>Sensores de reversa</li>
+        </ul>
+        <a class="btn btn--card" href="https://wa.me/573004424392?text=Hola%2C%20me%20interesa%20el%20Renault%20Duster%20Intens%202020" target="_blank" rel="noopener">Preguntar por este</a>
+      </article>
+
+      <article class="car-card">
+        <div class="car-card__top">
+          <svg viewBox="0 0 120 60" class="car-icon" aria-hidden="true"><path d="M10 40 L18 24 Q22 18 32 18 L78 18 Q88 18 92 24 L100 40 L108 40 Q112 40 112 44 L112 48 Q112 52 108 52 L100 52 M20 52 L92 52 M8 44 L8 48 Q8 52 12 52 L20 52 M20 40 L100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="88" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+          <span class="tag tag--hot">Se está vendiendo rápido</span>
+        </div>
+        <h3 class="car-card__name">Chevrolet Onix Turbo RS</h3>
+        <p class="car-card__meta">2022 · 29.000 km · Automático</p>
+        <p class="car-card__price">$71.200.000</p>
+        <ul class="car-card__specs">
+          <li>Hatchback · Turbo</li>
+          <li>Garantía vigente</li>
+          <li>Carplay / Android Auto</li>
+        </ul>
+        <a class="btn btn--card" href="https://wa.me/573004424392?text=Hola%2C%20me%20interesa%20el%20Chevrolet%20Onix%20Turbo%20RS%202022" target="_blank" rel="noopener">Preguntar por este</a>
+      </article>
+
+      <article class="car-card">
+        <div class="car-card__top">
+          <svg viewBox="0 0 120 60" class="car-icon" aria-hidden="true"><path d="M10 40 L18 24 Q22 18 32 18 L78 18 Q88 18 92 24 L100 40 L108 40 Q112 40 112 44 L112 48 Q112 52 108 52 L100 52 M20 52 L92 52 M8 44 L8 48 Q8 52 12 52 L20 52 M20 40 L100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="88" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <h3 class="car-card__name">Toyota Corolla Cross XLI</h3>
+        <p class="car-card__meta">2023 · 15.000 km · CVT</p>
+        <p class="car-card__price">$112.400.000</p>
+        <ul class="car-card__specs">
+          <li>SUV · Híbrido</li>
+          <li>Como nuevo</li>
+          <li>Cámara 360°</li>
+        </ul>
+        <a class="btn btn--card" href="https://wa.me/573004424392?text=Hola%2C%20me%20interesa%20el%20Toyota%20Corolla%20Cross%20XLI%202023" target="_blank" rel="noopener">Preguntar por este</a>
+      </article>
+
+      <article class="car-card">
+        <div class="car-card__top">
+          <svg viewBox="0 0 120 60" class="car-icon" aria-hidden="true"><path d="M10 40 L18 24 Q22 18 32 18 L78 18 Q88 18 92 24 L100 40 L108 40 Q112 40 112 44 L112 48 Q112 52 108 52 L100 52 M20 52 L92 52 M8 44 L8 48 Q8 52 12 52 L20 52 M20 40 L100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="88" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <h3 class="car-card__name">Volkswagen Polo Track</h3>
+        <p class="car-card__meta">2019 · 71.000 km · Mecánico</p>
+        <p class="car-card__price">$48.700.000</p>
+        <ul class="car-card__specs">
+          <li>Hatchback · Gasolina</li>
+          <li>Ideal primer carro</li>
+          <li>Bajo consumo</li>
+        </ul>
+        <a class="btn btn--card" href="https://wa.me/573004424392?text=Hola%2C%20me%20interesa%20el%20Volkswagen%20Polo%20Track%202019" target="_blank" rel="noopener">Preguntar por este</a>
+      </article>
+
+      <article class="car-card">
+        <div class="car-card__top">
+          <svg viewBox="0 0 120 60" class="car-icon" aria-hidden="true"><path d="M10 40 L18 24 Q22 18 32 18 L78 18 Q88 18 92 24 L100 40 L108 40 Q112 40 112 44 L112 48 Q112 52 108 52 L100 52 M20 52 L92 52 M8 44 L8 48 Q8 52 12 52 L20 52 M20 40 L100 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="88" cy="52" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+          <span class="tag tag--new">Ingresó esta semana</span>
+        </div>
+        <h3 class="car-card__name">Kia Sportage LX</h3>
+        <p class="car-card__meta">2021 · 38.500 km · Automático</p>
+        <p class="car-card__price">$96.800.000</p>
+        <ul class="car-card__specs">
+          <li>SUV · Gasolina</li>
+          <li>4x2</li>
+          <li>Cojinería en cuero</li>
+        </ul>
+        <a class="btn btn--card" href="https://wa.me/573004424392?text=Hola%2C%20me%20interesa%20el%20Kia%20Sportage%20LX%202021" target="_blank" rel="noopener">Preguntar por este</a>
+      </article>
+
+    </div>
+
+    <div class="catalog__more">
+      <p>¿No encontraste lo que buscas?</p>
+      <a class="btn btn--whatsapp" href="https://wa.me/573004424392?text=Hola%2C%20estoy%20buscando%20un%20carro%20espec%C3%ADfico%2C%20%C2%BFme%20pueden%20ayudar%3F" target="_blank" rel="noopener">Cuéntanos qué buscas</a>
+    </div>
+  </section>
+
+  <div class="divider divider--down" aria-hidden="true"></div>
+
+  <!-- ===== POR QUÉ NOSOTROS ===== -->
+  <section class="features" id="nosotros">
+    <div class="section-head">
+      <p class="eyebrow">POR QUÉ VLAUTOS</p>
+      <a href="#nosotros" class="section-title-link">
+        <h2 class="section-title">Comprar carro sin dolores de cabeza</h2>
+      </a>
+      <p class="reveal-text">Somos lo más cracks</p>
+    </div>
+    <div class="features__grid">
+      <div class="feature">
+        <svg viewBox="0 0 40 40" class="feature__icon" aria-hidden="true"><path d="M20 4 L34 10 V19 C34 28 28 34 20 37 C12 34 6 28 6 19 V10 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M13 20 L18 25 L28 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Revisión certificada</h3>
+        <p>Cada carro pasa por más de 100 puntos de inspección mecánica antes de publicarse en el catálogo.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 40 40" class="feature__icon" aria-hidden="true"><rect x="5" y="12" width="30" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M5 18 H35 M11 25 H17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <h3>Financiación a tu medida</h3>
+        <p>Trabajamos con varias entidades para armar un plan de pago que se ajuste a tu bolsillo real.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 40 40" class="feature__icon" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M20 11 V20 L26 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Respuesta en minutos</h3>
+        <p>Nada de esperar días. Escribes por WhatsApp y un asesor real te responde el mismo día.</p>
+      </div>
+      <div class="feature">
+        <svg viewBox="0 0 40 40" class="feature__icon" aria-hidden="true"><path d="M8 22 L8 16 L12 10 H28 L32 16 L32 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="13" cy="26" r="3.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="27" cy="26" r="3.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 22 H32" stroke="currentColor" stroke-width="2.2"/></svg>
+        <h3>Entrega en toda la ciudad</h3>
+        <p>Llevamos el carro hasta donde estés para que lo pruebes con calma antes de decidir.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider divider--up" aria-hidden="true"></div>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="testimonials" id="testimonios">
+    <div class="section-head">
+      <p class="eyebrow">CLIENTES VLAUTOS</p>
+      <h2 class="section-title">Lo que dicen quienes ya rodaron con nosotros</h2>
+    </div>
+    <div class="testimonials__grid">
+      <blockquote class="testimonial">
+        <p>"Escribí un domingo en la noche y el lunes ya tenía toda la info del carro, fotos y hasta el historial de mantenimiento. Cero presión, cero vueltas."</p>
+        <cite>— Laura M., Chapinero</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Compré mi primer carro con ellos. Me explicaron todo con calma por WhatsApp y me trajeron el carro hasta la casa para probarlo."</p>
+        <cite>— Andrés R., Suba</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>"Vendí el mío y compré uno nuevo con VLAUTOS en la misma semana. La comunicación fue clara desde el primer mensaje."</p>
+        <cite>— Camila T., Usaquén</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final" id="contacto">
+    <div class="cta-final__bg" aria-hidden="true"></div>
+    <div class="cta-final__content">
+      <p class="eyebrow eyebrow--light">¿LISTO PARA RODAR?</p>
+      <h2 class="cta-final__title">Escríbenos y arrancamos hoy mismo</h2>
+      <p class="cta-final__subtitle">Un asesor te responde por WhatsApp, sin formularios ni esperas.</p>
+      <a class="btn btn--whatsapp btn--lg" href="https://wa.me/573004424392?text=Hola%20VLAUTOS%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20carros" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9.2 9.5 8 9.3 7.5c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Escribir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <p class="nav__logo">VL<span class="nav__logo-accent">AUTOS</span></p>
+      <p>Bogotá D.C., Colombia</p>
+    </div>
+    <ul class="site-footer__links">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#nosotros">Por qué nosotros</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="https://wa.me/573004424392" target="_blank" rel="noopener">WhatsApp</a></li>
+    </ul>
+  </div>
+  <p class="site-footer__copy">© 2026 VLAUTOS. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a class="whatsapp-float" href="https://wa.me/573004424392?text=Hola%20VLAUTOS%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20carros" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <span class="whatsapp-float__ring"></span>
+  <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10 9.2 9.5 8 9.3 7.5c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
 </body>
 </html>
